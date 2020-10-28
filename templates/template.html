@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body style="color: brown;" >
+    <h1>Latest five articles are</h1>
+    <h4>Article id   Article Name</h4>
+    
+    {% for latest_article in latest_articles %}
+         <p>{{latest_article.id}} {{latest_article.articlename}}</p>
+         {% endfor %}
+
+    <p style="color: black;"><a href="/admin">click here to add articles </a></p>
+    <p style="color: black;"> Username :<strong><em>abcd</em></strong>, Password: <strong><em>abcd</em></strong> to login to admin </p>
+    
+</body>
+</html>
